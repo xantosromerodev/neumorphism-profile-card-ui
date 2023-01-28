@@ -12,47 +12,48 @@
 </head>
 <body>
 
-    <!-- BEM (Block - Element - Modifier) -->
     <div class="card">
         <div class="card__area">
-            <div class="card__area--inner">
-                <img src="images/avatar.png" alt="Foto de perfil">
-            </div>
+          <div class="card__inner">
+            <img src="images/avatar.png" alt="avatar" class="card__img">
+          </div>
         </div>
 
-        <div class="icon icon--arrow"><i class="fas fa-arrow-left"></i></div>
-        <div class="icon icon--dots"><i class="fas fa-ellipsis-v"></i></div>
+        <div class="card__icon card__icon--arrow"><i class="fas fa-arrow-left"></i></div>
+        <div class="card__icon card__icon--dots"><i class="fas fa-ellipsis-v"></i></div> 
 
-        <h1 class="card--name">Santos Romero</h1>
-        <span class="card--role">Desarrollador Frontend</span>
-        <!-- Bloque -->
-        <div class="social">
-            <a href="#" class="social__icon social__icon--hashnode"><i class="fab fa-hashnode"></i></a>
-            <a href="#" class="social__icon social__icon--linkedin"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="social__icon social__icon--github"><i class="fab fa-github"></i></a>
-            <a href="#" class="social__icon social__icon--youtube"><i class="fab fa-codepen"></i></a>
-        </div>
-        <!-- Bloque -->
-        <div class="button">
-            <button class="btn btn--message">Mensajes</button>
-            <button class="btn btn--follow">Seguidores</button>
-        </div>
-        <!-- Bloque -->
-        <div class="share">
-            <div class="btn">
-                <i class="far fa-heart"></i>
-                <span>20.4k</span>
-            </div>
-            <div class="btn">
-                <i class="far fa-comment"></i>
-                <span>14.3k</span>
-            </div>
-            <div class="btn">
-                <i class="fas fa-share"></i>
-                <span>12.8k</span>
-            </div>
-        </div>
-    </div>
+        <h1 class="card--title">Santos Romero</h1>
+        <h3 class="card--description">Desarrollador Web Frontend</h3>
 
+        <div class="card__icons">
+          <a href="https://xantosromeroblog.hashnode.dev/" class="card__icons--link card__link--hashnode"><i class="fab fa-hashnode"></i></a>
+          <a href="https://www.linkedin.com/in/xantosromero/" class="card__icons--link card__link--linkedin"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/xantosromerodev" class="card__icons--link card__link--github"><i class="fab fa-github"></i></a>
+          <a href="https://codepen.io/xantosromero/" class="card__icons--link card__link--codepen"><i class="fab fa-codepen"></i></a>
+        </div>
+
+        <div class="card__button">
+          <button class="button">Mensaje</button>
+          <button class="button">Suscríbete</button>
+        </div>
+
+        <div class="card__share">
+          <div class="card__row">
+            <i class="far fa-heart"></i>
+            <i class="icon-2 fas fa-heart"></i>
+            <span>20.4k</span>
+          </div>
+          <div class="card__row">
+            <i class="far fa-comment"></i>
+            <i class="icon-2 fas fa-comment"></i>
+            <span>14.3k</span>
+          </div>
+          <div class="card__row">
+            <i class="fas fa-share"></i>
+            <span>12.8k</span>
+          </div>
+        </div>
+      </div>
+    
 </body>
 </html>
