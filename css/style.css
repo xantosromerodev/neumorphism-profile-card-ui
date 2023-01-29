@@ -238,3 +238,10 @@ button:last-child {
     opacity: 1;
     pointer-events: auto;
 }
+
+/* Media Queries */
+@media screen and (max-width: 375px) {
+    .card {
+        width: 70vw;
+    }
+}
